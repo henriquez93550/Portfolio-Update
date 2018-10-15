@@ -116,7 +116,7 @@ a {
 	background-position: center;
 }
 
-#dogPark {
+#blackandwhite {
 	background-image: url("../images/blackandwhite.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -132,7 +132,7 @@ a {
 	background-position: center;
 }
 
-#cofeve {
+#outside {
 	display: none;
 	background-image: url("../images/lookingoutside.jpg");
 	background-size: cover;
@@ -140,7 +140,7 @@ a {
 	background-position: center;
 }
 
-#mountains {
+#vines {
 	display: none;
 	background-image: url("../images/vines.jpg");
 	background-size: cover;
@@ -320,11 +320,11 @@ footer hr {
 		font-size: 45px;
 	}
 
-	#whoMobile, #profilePic, #highLine, #cofeve, #mountains {
+	#whoMobile, #profilePic, #highLine, #outside, #vines {
 		display: inherit;
 	}
 
-	#dogPark {
+	#blackandwhite {
 		background-attachment: scroll;
 	}
 

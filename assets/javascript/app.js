@@ -30,19 +30,19 @@ projectListOne.forEach((element) => {
 
 
 
-$("#navWho").click(function() { 
+$("#navWho").click(() => { 
 	$('html,body').animate({
         scrollTop: $("#who").offset().top},800);           
 });
 
 
-$("#navPortfolio").click(function() { 
+$("#navPortfolio").click(() => { 
 	$('html,body').animate({
         scrollTop: $("#portfolio").offset().top},1000);           
 });
 
 
-$("#navContact").click(function() { 
+$("#navContact").click(() => { 
 	$('html,body').animate({
         scrollTop: $("#footer").offset().top},1100);           
 });

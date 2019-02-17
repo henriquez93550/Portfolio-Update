@@ -1,357 +1,478 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-
-    <meta charset='utf-8'>
-    <meta name="description" content="Personal Site for Erick Henriquez - Web Developer">
-    <meta name="author" content="Erick Henriquez">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Personal Site for Erick Henriquez - Web Developer"
+    />
+    <meta name="author" content="Erick Henriquez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Erick Henriquez</title>
 
-        <!--Bootstrap links, CSS, JQUERY, JavaScript-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="icon" href="assets/images/lion.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Bootstrap links, CSS, JQUERY, JavaScript-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/images/lion.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="jumbotron text-center animate-bottom noOverflow relativeP">
+      <div class="logo">
+        <h1 class="myName">ERICK HENRIQUEZ</h1>
+        <p>Full Stack Web Developer</p>
+      </div>
+    </header>
 
-	<header class="jumbotron text-center animate-bottom noOverflow relativeP">
-	  <div class="logo">
-	  	<h1 class="myName">ERICK HENRIQUEZ</h1>
-	  	<p>Full Stack Web Developer</p>
-	  </div>
-	</header>
+    <nav class="container padding5" id="navigator">
+      <ul class="nav nav-pills nav-justified padding-zero">
+        <li class="nav-item" id="navWho">
+          <a class="nav-link hover-light">Who I Am</a>
+        </li>
+        <li class="nav-item" id="navPortfolio">
+          <a class="nav-link hover-light">Portfolio</a>
+        </li>
+        <li class="nav-item" id="navResume">
+          <a class="nav-link hover-light">Resume</a>
+        </li>
+        <li class="nav-item" id="navContact">
+          <a class="nav-link hover-light">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-	<nav class="container padding5" id="navigator">
-		<ul class="nav nav-pills nav-justified padding-zero">
-		  <li class="nav-item" id="navWho">
-		    <a class="nav-link hover-light">Who I Am</a>
-		  </li>
-		  <li class="nav-item" id="navPortfolio">
-		    <a class="nav-link hover-light">Portfolio</a>
-		  </li>
-		  <li class="nav-item" id="navResume">
-		    <a class="nav-link hover-light">Coming Soon</a>
-		  </li>
-		  <li class="nav-item" id="navContact">
-		    <a class="nav-link hover-light">Contact</a>
-		  </li>
-		</ul>
-	</nav>
-	
-	<section class="modal fade" id="resumeModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-lg" role="document">
-		  <div class="modal-content">
-			  <div class="modal-header">
-				  <a href="assets/images/resume_Erick_Henriquez.pdf" target="_blank">Download PDF Resume</a>
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-				  </button>
-			  </div>
-			  <div class="modal-body">
-				  <div class="row text-center">
-					  <div class="col-sm-12">
-						  <div id="profile_image">
-							  <img src="assets/images/githubProfileImg.jpg" alt="Profile Pic" height='200'>
-						  </div>
-						  <div>
-							  <h3 class="mb-0">Erick Henriquez</h3>
-							  <p class="text-muted mb-0">Dallas, TX</p>
-						  </div>
-						  <div class="mtb-10">
-							  <em>
-								  Full Stack Web Developer with a passion for UI/UX. Educated in Cyber security with strengths in HTML, CSS, Bootstrap, Node, and React. 
-							  </em>
-						  </div>
-						  <hr class="mtb-10">
-						  <div>
-							  <a href="https://github.com/henriquez93550" target="_blank">GitHub</a>
-							  <a href="https://www.linkedin.com/in/erick-henriquez-542216b1/" target="_blank">LinkedIn</a>
-							  <a id="resumeEmail" href="mailto:henriquez93550@yahoo.com">Email</a>
-						  </div>
-						  <hr class="mtb-10">
-					  </div>	
-				  </div>
-				  <div class="row">
-					  <div class="col-sm-12">
-						  <div>
-							  <h4>EDUCATION</h4>
-						  </div>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-education"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <h5>Southern Methodist University</h5>
-								  <p><em>Full Stack Web Development</em></p>
-								  <p>- An intensive 24-week long boot camp dedicated to designing and building web applications. Skills learned consisted of HTML5, CSS3, Javascript, JQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handlebars, & React Js.
-								  </p>
-								  <p class='text-muted'>August 2018 - February 2019</p>
-							  </div>	
-						  </div>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-education"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <h5>American Military University</h5>
-								  <p><em>BS - Information Systems Security</em></p>
-								  <p class='text-muted'>August 2014 - August 2018</p>
-							  </div>	
-						  </div>
-					  </div>
-				  </div>
-				  <hr>
-				  <div class="row">
-					  <div class="col-sm-12">
-						  <h4>APPLICATIONS</h4>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-folder-open"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <h5>Web Dev Point</h5>
-								  <p>- Full Stack Web Application teaching folks with no experience how to code and provides a road map to becoming a full stack developer</p>
-								  <p>- Developed a responsive CRUD application that includes webpages, user authentication throught JWT and a forum</p>
-								  <p>- React Js, MongoDB, Node/Express, Passport Js, Bootstrap, and JWT token authentication</p>
-								  <p><a href="https://github.com/henriquez93550/login-registration" target="_blank">https://github.com/henriquez93550/login-registration</a></p>
-							  </div>	
-						  </div>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-folder-open"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <h5>Find a Friend</h5>
-								  <p>- Website for individuals to find the perfect pet companion</p>
-								  <p>- Sole Developer</p>
-								  <p>- Bootstrap, Firebase, jQuery, Javascript</p>
-								  <p><a href="https://github.com/henriquez93550/PetsProject" target="_blank">https://github.com/henriquez93550/PetsProject</a></p>
-							  </div>	
-						  </div>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-folder-open"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <h5>Clicky Game React</h5>
-								  <p>- Memory game created using React</p>
-								  <p>- Sole Developer</p>
-								  <p>- React</p>
-								  <p><a href="https://github.com/henriquez93550/clicky-game-react" target="_blank">https://github.com/henriquez93550/clicky-game-react</a></p>
-							  </div>	
-						  </div>
-					  </div>
-				  </div>
-				  <hr>
-				  <div class="row">
-					  <div class="col-sm-12">
-						  <h4>RELEVANT EXPERIENCE</h4>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-briefcase"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <h5>SMU Full Stack Development</h5>
-								  <p>- Created projects using tools necessary to create full stack applications </p>
-								  <p>- Participated in group projects, was in charge of designing, implementing, and deploying applications</p>
-							  </div>	
-						  </div>
-					  </div>
-				  </div>
-				  <hr>
-				  <div class="row">
-					  <div class="col-sm-12">
-						  <h4>ADDITIONAL WORK EXPERIENCE</h4>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-briefcase"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <p>Social Security Administration</p>
-								  <p class='text-muted'>May 2016 - Current</p>
-								  <p>- Assisting General Public with SSA website</p>
-								  <p>- Shared responsibilities with one other developer to design, implement, and maintain retail web-site</p>
-							  </div>	
-						  </div>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-briefcase"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <p>Dent Zone</p>
-								  <p class='text-muted'>December 2014 - May 2016</p>
-								  <p class="toggle" data-toggle="collapse" data-target="#iei">View Description</p>
-								  <div id="iei" class="collapse">
-									  <p> .</p>
-									  <p>- Investigated and processed claims filed by contract holders</p>
-									  <p>- Developed and maintained long-term relationships with technicians providing tailored services</p>
-								  </div>
-							  </div>	
-						  </div>
-						  <div class="row">
-							  <div class="col-xs-1 text-center text-muted">
-								  <span class="glyphicon glyphicon-briefcase"></span>
-							  </div>
-							  <div class="col-xs-11">
-								  <p>United States Army</p>
-								  <p class='text-muted'>June 2007 - October 2014</p>
-								  <p class="toggle" data-toggle="collapse" data-target="#gator">View Description</p>
-								  <div id="gator" class="collapse">
-									  <p>Work as a logistic liaison for units to central army command.</p>
-									  <p>- Maintained and Updated Databases</p>
-									  <p>- tracked shipments and receivables</p>
-								  </div>
-							  </div>	
-						  </div>
-					  </div>
-				  </div>
-			  </div>
-			  <div class="modal-footer">
-				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-				  </button>				
-			  </div>
-		  </div>
-	   </div>
-  </section> -->
+    <section class="modal fade" id="resumeModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="assets/images/pdf" target="_blank">Download PDF Resume</a>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <div id="profile_image">
+                  <img
+                    src="assets/images/githubProfileImg.jpg"
+                    alt="Profile Pic"
+                    height="200"
+                  />
+                </div>
+                <div>
+                  <h3 class="mb-0">Erick Henriquez</h3>
+                  <p class="text-muted mb-0">Dallas, TX</p>
+                </div>
+                <div class="mtb-10">
+                  <em>
+                    Full Stack Web Developer with a passion for UI/UX. Educated
+                    in Cyber security with strengths in HTML, CSS, Bootstrap,
+                    Node, and React.
+                  </em>
+                </div>
+                <hr class="mtb-10" />
+                <div>
+                  <a href="https://github.com/henriquez93550" target="_blank"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/erick-henriquez-542216b1/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                  <a id="resumeEmail" href="mailto:henriquez93550@yahoo.com"
+                    >Email</a
+                  >
+                </div>
+                <hr class="mtb-10" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div>
+                  <h4>EDUCATION</h4>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-education"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <h5>Southern Methodist University</h5>
+                    <p><em>Full Stack Web Development</em></p>
+                    <p>
+                      - An intensive 24-week long boot camp dedicated to
+                      designing and building web applications. Skills learned
+                      consisted of HTML5, CSS3, Javascript, JQuery, Bootstrap,
+                      Firebase, Node Js, MySQL, MongoDB, Express, Handlebars, &
+                      React Js.
+                    </p>
+                    <p class="text-muted">August 2018 - February 2019</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-education"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <h5>American Military University</h5>
+                    <p><em>BS - Information Systems Security</em></p>
+                    <p class="text-muted">August 2014 - August 2018</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>APPLICATIONS</h4>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <h5>Web Dev Point</h5>
+                    <p>
+                      - Full Stack Web Application teaching folks with no
+                      experience how to code and provides a road map to becoming
+                      a full stack developer
+                    </p>
+                    <p>
+                      - Developed a responsive CRUD application that includes
+                      webpages, user authentication throught JWT and a forum
+                    </p>
+                    <p>
+                      - React Js, MongoDB, Node/Express, Passport Js, Bootstrap,
+                      and JWT token authentication
+                    </p>
+                    <p>
+                      <a
+                        href="https://github.com/henriquez93550/login-registration"
+                        target="_blank"
+                        >https://github.com/henriquez93550/login-registration</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <h5>Find a Friend</h5>
+                    <p>
+                      - Website for individuals to find the perfect pet
+                      companion
+                    </p>
+                    <p>- Sole Developer</p>
+                    <p>- Bootstrap, Firebase, jQuery, Javascript</p>
+                    <p>
+                      <a
+                        href="https://github.com/henriquez93550/PetsProject"
+                        target="_blank"
+                        >https://github.com/henriquez93550/PetsProject</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <h5>Clicky Game React</h5>
+                    <p>- Memory game created using React</p>
+                    <p>- Sole Developer</p>
+                    <p>- React</p>
+                    <p>
+                      <a
+                        href="https://github.com/henriquez93550/clicky-game-react"
+                        target="_blank"
+                        >https://github.com/henriquez93550/clicky-game-react</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>RELEVANT EXPERIENCE</h4>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <h5>SMU Full Stack Development</h5>
+                    <p>
+                      - Created projects using tools necessary to create full
+                      stack applications
+                    </p>
+                    <p>
+                      - Participated in group projects, was in charge of
+                      designing, implementing, and deploying applications
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>ADDITIONAL WORK EXPERIENCE</h4>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <p>Social Security Administration</p>
+                    <p class="text-muted">May 2016 - Current</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <p>
+                      Assisting General Public with SSA website
+                    </p>
+                    <p class="text-muted">December 2014 - May 2016</p>
+                    <p class="toggle" data-toggle="collapse" data-target="#iei">
+                      View Description
+                    </p>
+                    <div id="iei" class="collapse">
+                      <p>
+                        Investigated and processed claims filed by contract
+                        holders
+                      </p>
+                      <p>
+                        - Developed and maintained long-term relationships with
+                        technicians
+                      </p>
+                      <p>- Connencted customers to tailored services</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-1 text-center text-muted">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                  </div>
+                  <div class="col-xs-11">
+                    <p>United States Army</p>
+                    <p class="text-muted">June 2007 - October 2014</p>
+                    <p
+                      class="toggle"
+                      data-toggle="collapse"
+                      data-target="#gator"
+                    >
+                      View Description
+                    </p>
+                    <div id="gator" class="collapse">
+                      <p>
+                        Work as a logistic liaison for units to central army
+                        command
+                      </p>
+                      <p>- Maintained and Updated Databases</p>
+                      <p>- tracked shipments and receivables</p>
+                      <!-- <p>- Sales Forecasting</p>
+                      <p>- Marketing</p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	
-
-	<section class="container-fluid" id="who">
-		<div class="row">
-			<div class="col-sm-5 relativeP row-height noOverflow paddingRight">
-				<div class="relativeP row-height slide_in" id="blackandwhite">
-					<div class="slide_in_Text">
-						<p>Full Stack Web Developer with a passion for creating and design. Educated in Information Systems Security with knowledge in web development technologies such as HTML, CSS, Bootstrap, jQuery and JavaScript.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-7 row-height" id="whoMobile">
-				<div class="row">
-					<div class="col-sm-7 paddingRight noOverflow">
-						<div class="relativeP row-heightHalf slide_in" id="highLine">
-							<div class="slide_in_Text">
-								<p>Trained and led soldiers in logistic operations. Worked with superiors to accomplish mission objectives. Developed a component database to track parts and revised methods to efficiently order new components.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-5 paddingZero noOverflow">
-						<div class="relativeP row-heightHalf slide_in" id="vines">
-							<!-- <div class="slide_in_Text">
+    <section class="container-fluid" id="who">
+      <div class="row">
+        <div class="col-sm-5 relativeP row-height noOverflow paddingRight">
+          <div class="relativeP row-height slide_in" id="black">
+            <div class="slide_in_Text">
+              <p>
+                Full Stack Web Developer with a passion for creating and design.
+                Educated in Information Systems Security with knowledge in web
+                development technologies such as HTML, CSS, Bootstrap, Node,
+                MongoDB, Express, JavaScript and React.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7 row-height" id="whoMobile">
+          <div class="row">
+            <div class="col-sm-7 paddingRight noOverflow">
+              <div class="relativeP row-heightHalf slide_in" id="highLine">
+                <div class="slide_in_Text">
+                  <p>
+                    Trained and led soldiers in logistic operations. Worked with
+                    superiors to accomplish mission objectives. Developed a
+                    component database to track parts and revised methods to
+                    efficiently order new components.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5 paddingZero noOverflow">
+              <div class="relativeP row-heightHalf slide_in" id="vines">
+                <!-- <div class="slide_in_Text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
 								</p>
 							</div> -->
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4 paddingTopRight noOverflow">
-						<div class="relativeP row-heightHalf slide_in" id="profilePic">
-							<!-- <div class="slide_in_Text">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 paddingTopRight noOverflow">
+              <div class="relativeP row-heightHalf slide_in" id="profilePic">
+                <!-- <div class="slide_in_Text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
 								</p>
 							</div> -->
-						</div>
-					</div>
-					<div class="col-sm-8 paddingTop noOverflow">
-						<div class="relativeP row-heightHalf slide_in" id="outside">
-							<div class="slide_in_Text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ut atque quam nam. Consequatur distinctio consectetur sunt vero saepe. Vero facere, voluptate enim in, quam maxime sunt laudantium? Nulla, dolor.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			
-			</div>
-		</div>
-	</section>
+              </div>
+            </div>
+            <div class="col-sm-8 paddingTop noOverflow">
+              <div class="relativeP row-heightHalf slide_in" id="outside">
+                <div class="slide_in_Text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Molestiae ut atque quam nam. Consequatur distinctio
+                    consectetur sunt vero saepe. Vero facere, voluptate enim in,
+                    quam maxime sunt laudantium? Nulla, dolor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="container" id="portfolio">
-		<div class="row" id="portBackground">
-			<img id="portBanner" src="assets/images/portfolioHeader.png">
-		</div>
-		<div class="row mb-80">
-			<div class="col-sm-6">
-				<img src="assets/images/animalword.png" width="90%">
-			</div>
-			<div class="col-sm-6">
-				<h4 class="mt-60">Word Guess Game</h4>
-				<p>A word guessing game that runs in the browser, and features dynamically updated HTML and CSS powered through JavaScript code.</p>
-				<a href="https://henriquez93550.github.io/Word-Guessing-Game/" class="btn btn-default" target="_blank">Visit the Site</a>
-			</div>
-		</div>
-		<div class="row mb-80">
-			<div class="col-sm-6 text-right">
-				<h4 class="mt-60">Crystal Collector</h4>
-				<p>A fun and interactive game for made for web browsers. This application dynamically updates HTML pages using the jQuery library.</p>
-				<a href="https://henriquez93550.github.io/Crystal-Collector-Game/" class="btn btn-default" target="_blank">Visit the Site</a>
-			</div>
-			<div class="col-sm-6">
-				<img src="assets/images/crystalcollector.png" width="90%">
-			</div>
-		</div>
-		<div class="row mb-80">
-			<div class="col-sm-6">
-				<img src="assets/images/catquiz.png" width="90%">
-			</div>
-			<div class="col-sm-6">
-				<h4 class="mt-60">Trivia Game</h4>
-				<p>A trivia game using JavaScript for logic and jQuery to manipulate HTML. This application also uses CSS styling to produce a stylish interface.</p>
-				<a href="https://henriquez93550.github.io/TriviaGameMax/" class="btn btn-default" target="_blank">Visit the Site</a>
-			</div>
-    </div>
-    <div class="row mb-80">
-			<div class="col-sm-6 text-right">
-				<h4 class="mt-60">Find a Friend</h4>
-				<p>A fully functioning website built using the Bootstrap framework. It utilizes the Petfinder and Wikipedia API. Firebase has been intergrated in to the website as a way to keep track of user contact information.</p>
-				<a href="https://henriquez93550.github.io/PetsProject/" class="btn btn-default" target="_blank">Visit the Site</a>
-			</div>
-			<div class="col-sm-6">
-				<img src="assets/images/findafriend.png" width="90%">
-			</div>
-    </div>
-    <div class="row mb-80">
-			<div class="col-sm-6">
-				<img src="assets/images/coming-soon_macbookpro15_front.png" width="90%">
-			</div>
-			<div class="col-sm-6">
-				<h4 class="mt-60">Rock Paper Scissors</h4>
-				<p>Coming Soon</p>
-				<a href="#" class="btn btn-default" target="_blank">Coming Soon</a>
-			</div>
-    </div>
-	</section>
+    <section class="container" id="portfolio">
+      <div class="row" id="portBackground">
+        <img id="portBanner" src="assets/images/portfolioHeader.png" />
+      </div>
+      <div class="row mb-80">
+        <div class="col-sm-6">
+          <img src="assets/images/webdevpoint.png" width="90%" />
+        </div>
+        <div class="col-sm-6">
+          <h4 class="mt-60">Web Dev Point</h4>
+          <p>
+            A fully functioning website with a forum built using the MERN stack
+            with JWT authentication. Technologies used to create this app
+            include React, Redux, Node, Express, MongoDB, Bootstrap, and
+            Passport JS for authentication.
+          </p>
+          <a
+            href="https://web-devpoint.herokuapp.com/home"
+            class="btn btn-default"
+            target="_blank"
+            >Visit the Site</a
+          >
+        </div>
+      </div>
+      <div class="row mb-80">
+        <div class="col-sm-6 text-right">
+          <h4 class="mt-60">Clicky React Memory Game</h4>
+          <p>
+            A memory game created using React. The rules are simple. Click on a
+            picture but dont click it twice or else you'll lose. How long can
+            you last in this exciting clicking action game
+          </p>
+          <a
+            href="https://henriquez93550.github.io/clicky-game-react/"
+            class="btn btn-default"
+            target="_blank"
+            >Visit the Site</a
+          >
+        </div>
+        <div class="col-sm-6">
+          <img src="assets/images/clickyreact.png" width="90%" />
+        </div>
+      </div>
+      <div class="row mb-80">
+        <div class="col-sm-6">
+          <img src="assets/images/madlibs.png" width="90%" />
+        </div>
+        <div class="col-sm-6">
+          <h4 class="mt-60">MadLibs</h4>
+          <p>
+            A React application aimed at children in which users add their own
+            words to create hilarious madlibs combinations. This application
+            uses the create react app and react router.
+          </p>
+          <a
+            href="https://henriquez93550.github.io/react-story-app/"
+            class="btn btn-default"
+            target="_blank"
+            >Visit the Site</a
+          >
+        </div>
+      </div>
+    </section>
 
-	<footer class="container-fluid text-center" id="footer">
-		<div class="row">
-			<div class="col-sm-4" id="contact">
-				<p>Contact</p>
-				<hr>
-				<div id="socialLinks">
-					<a id="resumeEmail" href="mailto:henriquez93550@yahoo.com"><span class="glyphicon glyphicon-envelope"></span></a>
-					<a href="https://github.com/henriquez93550" target="_blank"><img id="git" src="assets/images/github.png" alt="github"></a>
-					<a href="https://www.linkedin.com/in/erick-henriquez-542216b1/" target="_blank"><img id="link" src="assets/images/linkedin.png" alt="linked-in"></a>
-				</div>	
-			</div>
-			<div class="col-sm-4" id="projectListOne"></div>
-			<div class="col-sm-4" id="projectListTwo"></div>
-		</div>
-		<div class="row text-center margin-top">
-			<div class="col-sm-12" id="copyright">&copy Copyright - Erick Henriquez 2019</div>
-		</div>
-	</footer>
- 
+    <footer class="container-fluid text-center" id="footer">
+      <div class="row">
+        <div class="col-sm-4" id="contact">
+          <p>Contact</p>
+          <hr />
+          <div id="socialLinks">
+            <a id="resumeEmail" href="mailto:henriquez93550@yahoo.com"
+              ><span class="glyphicon glyphicon-envelope"></span
+            ></a>
+            <a href="https://github.com/henriquez93550" target="_blank"
+              ><img id="git" src="assets/images/github.png" alt="github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/erick-henriquez-542216b1/"
+              target="_blank"
+              ><img id="link" src="assets/images/linkedin.png" alt="linked-in"
+            /></a>
+          </div>
+        </div>
+        <div class="col-sm-4" id="projectListOne"></div>
+        <div class="col-sm-4" id="projectListTwo"></div>
+      </div>
+      <div class="row text-center margin-top">
+        <div class="col-sm-12" id="copyright">
+          Erick Henriquez &#169; 2019
+        </div>
+      </div>
+    </footer>
 
-<script src="assets/javascript/app.js"></script>
-</body>
+    <script src="assets/javascript/app.js"></script>
+  </body>
 </html>
